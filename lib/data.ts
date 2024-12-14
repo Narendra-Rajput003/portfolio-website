@@ -40,23 +40,23 @@ export const experiencesData = [
     description:
       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
-    date: "2024",
+    date: "2023",
   },
   {
-    title: "Front-End Developer",
+    title: "Freelancer",
     location: "Rajkot, India",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I worked as a freelancer for upskilling my skills and building my portfolio. I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
-    date: "2024 - 2026",
+    date: "2024 - Present",
   },
   {
     title: "Full-Stack Developer",
-    location: "Ahmedabad, India",
+    location: "Gujarat, India",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a full-stack developer working in VicataSoft Pvt Ltd. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
-    date: "2026 - present",
+    date: "2024 - present",
   },
 ] as const;
 
