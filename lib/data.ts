@@ -67,6 +67,8 @@ export const projectsData = [
       "StudyNotion is a platform for students buy courses and study materials.Instructors can create courses, upload study materials, and share them with students.",
     tags: ["React","MongoDB", "Tailwind", "Node.js", "Express"],
     imageUrl: StudyNotionImg,
+    Github: "https://github.com/Narendra-Rajput003/StudyNotion-Edtech",
+    Demo: "https://studynotion.vercel.app/",
   },
   {
     title: "Expense Tracker",
@@ -74,6 +76,8 @@ export const projectsData = [
       "Expense Tracker is a public web app for tracking expenses . It has features like add expense , edit expense and delete expense.",
     tags: ["React","MongoDB", "Tailwind", "Node.js", "Express", "Apollo GraphQL"],
     imageUrl: ExpenseImg,
+    Github: "https://github.com/Narendra-Rajput003/Expense-Tracker-App",
+    Demo: "https://expense-tracker-app-egry.onrender.com",
   },
   {
     title: "Eloquent Solutions",
@@ -81,6 +85,8 @@ export const projectsData = [
       "At Eloquent Solutions, it specialize in transforming ideas into seamless digital experiences.",
     tags: ["React","MongoDB", "Tailwind", "Node.js", "Express" ,"Framer Motion"],
     imageUrl: freelancerImg,
+    Github: "#",
+    Demo: "https://eloquentsolutions.in",
   },
 ] as const;
 
