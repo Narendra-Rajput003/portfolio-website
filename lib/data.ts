@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import freelancerImg from "@/public/freelancer.png";
+import chocoImage from "@/public/choco.png";
 import ExpenseImg from "@/public/expense tracker.png";
-import StudyNotionImg from "@/public/studynotion.png";
+import AiPdfNoteTaker from "@/public/Screenshot 2025-01-23 175529.png";
 
 export const links = [
   {
@@ -38,15 +38,15 @@ export const experiencesData = [
     title: "Graduated bootcamp",
     location: "Rajkot, India",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "During my college years, I learned HTML, CSS, and JavaScript to build a career in Web Development.",
     icon: React.createElement(LuGraduationCap),
     date: "2023",
   },
   {
-    title: "Freelancer",
+    title: "Eloquent Solutions",
     location: "Rajkot, India",
     description:
-      "I worked as a freelancer for upskilling my skills and building my portfolio. I also upskilled to the full stack.",
+      "I work with Node.js at Eloquent Solutions, building scalable backend systems and APIs.",
     icon: React.createElement(CgWorkAlt),
     date: "2024 - Present",
   },
@@ -54,42 +54,63 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Gujarat, India",
     description:
-      "I'm now a full-stack developer working in VicataSoft Pvt Ltd. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I worked as a freelancer for upskilling my skills and building my portfolio. I also upskilled to the full stack. ",
     icon: React.createElement(FaReact),
-    date: "2024 - present",
+    date: "2025 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "StudyNotion",
-    description:
-      "StudyNotion is a platform for students buy courses and study materials.Instructors can create courses, upload study materials, and share them with students.",
-    tags: ["React","MongoDB", "Tailwind", "Node.js", "Express"],
-    imageUrl: StudyNotionImg,
-    Github: "https://github.com/Narendra-Rajput003/StudyNotion-Edtech",
-    Demo: "https://studynotion.vercel.app/",
+    id: 1,
+    title: "AI PDF Note Taker ",
+    description: [
+      "A web application for taking notes using AI.",
+      "User can upload a PDF file and AI will generate notes for them.",
+      "User can Ask questions to AI and get answers.",
+      "Using langchain and Google Gemini API.",
+
+    ],
+    tags: ["Next.js", "Convex", "Tailwind", "Langchain", "Google Generative AI"],
+    imageUrl: AiPdfNoteTaker,
+    Github: "https://github.com/Narendra-Rajput003/ai-pdf-note-taker",
+    Demo: "#",
+    category: "Full Stack",
   },
   {
+    id: 2,
     title: "Expense Tracker",
-    description:
-      "Expense Tracker is a public web app for tracking expenses . It has features like add expense , edit expense and delete expense.",
-    tags: ["React","MongoDB", "Tailwind", "Node.js", "Express", "Apollo GraphQL"],
+    description: [
+      "A web application for managing personal expenses.",
+      "Graph visualizations to track spending patterns.",
+      "There are multiple expense categories like food, travel, entertainment, and more.",
+      "There are multiple payment methods like cash, credit card, and debit card.",
+      "User can add, edit, and delete expenses.",
+
+    ],
+    tags: ["React", "MongoDB", "Tailwind", "Node.js", "Express", "Apollo GraphQL"],
     imageUrl: ExpenseImg,
     Github: "https://github.com/Narendra-Rajput003/Expense-Tracker-App",
     Demo: "https://expense-tracker-app-egry.onrender.com",
+    category: "Full Stack",
   },
   {
-    title: "Eloquent Solutions",
-    description:
-      "At Eloquent Solutions, it specialize in transforming ideas into seamless digital experiences.",
-    tags: ["React","MongoDB", "Tailwind", "Node.js", "Express" ,"Framer Motion"],
-    imageUrl: freelancerImg,
-    Github: "#",
-    Demo: "https://eloquentsolutions.in",
+    id: 3,
+    title: "Choco E-Commerce",
+    description: [
+      "An e-commerce platform for chocolate products.",
+      "Admin Dashboard to manage products and orders.",
+      "There are lots chocolate varieties.",
+      "Crypto Payment Gateway for secure transactions.",
+
+    ],
+    tags: ["Next.js", "Drizzle ORM", "Tailwind", "Zustand","Next-Auth","Cryptomus"],
+    imageUrl: chocoImage,
+    Github: "https://github.com/Narendra-Rajput003/choco-quick-commerce",
+    Demo: "#",
+    category: "Full Stack",
   },
 ] as const;
-
 export const skillsData = [
   "HTML",
   "CSS",
