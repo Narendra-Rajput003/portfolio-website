@@ -2,8 +2,9 @@ import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ProjectDetails({ params }: { params: { id: string } }) {
-  const project = projectsData.find((project) => project.id === Number(params.id));
+export default async function ProjectDetails({ params }: { params: { id: string } }):Promise<any> {
+  const { id } = params;
+  const project = projectsData.find((project) => project.id === Number(id));
 
   if (!project) {
     return <div>Project not found</div>;
