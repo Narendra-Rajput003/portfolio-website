@@ -2,12 +2,11 @@ import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ProjectDetails({
-  params,
-}: {
+type ProjectDetailsProps = {
   params: { id: string };
-}) {
-  // Find the project by ID
+};
+
+export default function ProjectDetails({ params }: ProjectDetailsProps) {
   const project = projectsData.find(
     (project) => project.id === Number(params.id)
   );
