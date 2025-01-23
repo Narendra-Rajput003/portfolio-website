@@ -1,14 +1,31 @@
+"use client";
+
+import React, { useEffect, useState } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 
 type ProjectDetailsProps = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
+ function ProjectDetails({ params }: ProjectDetailsProps) {
+  const [resolvedParams, setResolvedParams] = useState<{ id: string } | null>(null);
 
-export default function ProjectDetails({ params }: ProjectDetailsProps) {
+  useEffect(() => {
+    params.then(setResolvedParams);
+  }, [params]);
+
+  if (!resolvedParams) {
+    return <div>Loading...</div>;
+  }
+
   const project = projectsData.find(
-    (project) => project.id === Number(params.id)
+    (project) => project.id === Number(resolvedParams.id)
+  );
+
+  function ProjectDetails({ params }: ProjectDetailsProps) {
+  const project = projectsData.find(
+    async (project) => project.id === Number((await params).id)
   );
 
   // Handle case where project is not found
@@ -88,3 +105,6 @@ export default function ProjectDetails({ params }: ProjectDetailsProps) {
     </div>
   );
 }
+}
+
+export default ProjectDetails;
