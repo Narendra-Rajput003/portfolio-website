@@ -1,12 +1,18 @@
-import React, { JSX } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 
-export default async function ProjectDetails({ params }: { params: { id: string } }):Promise<JSX.Element> {
-  const { id } = params;
-  const project = projectsData.find((project) => project.id === Number(id));
+export default function ProjectDetails({
+  params,
+}: {
+  params: { id: string };
+}) {
+  // Find the project by ID
+  const project = projectsData.find(
+    (project) => project.id === Number(params.id)
+  );
 
+  // Handle case where project is not found
   if (!project) {
     return <div>Project not found</div>;
   }
