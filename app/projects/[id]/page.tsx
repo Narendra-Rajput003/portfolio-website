@@ -8,7 +8,8 @@ import Link from "next/link";
 type ProjectDetailsProps = {
   params: Promise<{ id: string }>;
 };
- function ProjectDetails({ params }: ProjectDetailsProps) {
+
+const ProjectDetails = ({ params }: ProjectDetailsProps) => {
   const [resolvedParams, setResolvedParams] = useState<{ id: string } | null>(null);
 
   useEffect(() => {
@@ -21,11 +22,6 @@ type ProjectDetailsProps = {
 
   const project = projectsData.find(
     (project) => project.id === Number(resolvedParams.id)
-  );
-
-  function ProjectDetails({ params }: ProjectDetailsProps) {
-  const project = projectsData.find(
-    async (project) => project.id === Number((await params).id)
   );
 
   // Handle case where project is not found
@@ -104,7 +100,6 @@ type ProjectDetailsProps = {
       </div>
     </div>
   );
-}
-}
+};
 
 export default ProjectDetails;
