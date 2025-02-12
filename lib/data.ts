@@ -5,7 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import chocoImage from "@/public/choco.png";
 import ExpenseImg from "@/public/expense tracker.png";
 import AiPdfNoteTaker from "@/public/Screenshot 2025-01-23 175529.png";
-
+import AiCodeReviewer from "@/public/aicodereviewer.png";
 export const links = [
   {
     name: "Home",
@@ -43,12 +43,12 @@ export const experiencesData = [
     date: "2023",
   },
   {
-    title: "Eloquent Solutions",
+    title: "React Developer",
     location: "Rajkot, India",
     description:
-      "I work with Node.js at Eloquent Solutions, building scalable backend systems and APIs.",
+      "I worked with CLOUDGATE LLP to build a web application for their clients.I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
-    date: "2024 - Present",
+    date: "2024 - 2025",
   },
   {
     title: "Full-Stack Developer",
@@ -110,6 +110,20 @@ export const projectsData = [
     Demo: "#",
     category: "Full Stack",
   },
+  {
+    id:4,
+    title:"AI CODE REVIEWER",
+    description:[
+      "A web application for reviewing code.",
+      "User can paste a code file and AI will analyze it and give feedback.",
+      "AI will give to suggestions to improve the code.",
+    ],
+    tags:["Next.js","Tailwind","GEMINI API","react-simple-code-editor","Prism"],
+    imageUrl:AiCodeReviewer,
+    Github:"https://github.com/Narendra-Rajput003/AI-Code-Reviewer-",
+    Demo:"https://ai-code-reviewer-peach.vercel.app/",
+    category:"Full Stack",
+  }
 ] as const;
 export const skillsData = [
   "HTML",
