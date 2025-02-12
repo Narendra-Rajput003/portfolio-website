@@ -1,8 +1,7 @@
 
 # Personal Portfolio
  - Built with Next.js, TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, Vercel hosting.
- - Live at https://narendra-portfolio.vercel.app/
- - Source code is available at https://github.com/Narendra-Rajput003/my-portfolio
+ - Live at [https://narendra-portfolio.vercel.app/](https://narendra-portfolio-website.vercel.app/)
  - Made by Narendra Rajput
  - MIT License
 
